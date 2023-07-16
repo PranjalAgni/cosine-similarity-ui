@@ -12,7 +12,7 @@ const TextSimilarity: FC<TextSimilarityProps> = ({ results }) => {
   return results.map((data) => (
     <div key={data.id} className="mt-10">
       <div className="flex items-center">
-        <div className="w-64 h-20 border border-gray-400 p-2">
+        <div className="w-400 max-w-full max-h-full border border-gray-400 p-2 inline-block">
           {data.text[0]}
         </div>
         <svg className="h-8 w-16 mx-2">
@@ -36,7 +36,7 @@ const TextSimilarity: FC<TextSimilarityProps> = ({ results }) => {
             strokeWidth="2"
           />
         </svg>
-        <div className="w-64 h-20 border border-gray-400 p-2">
+        <div className="w-400 max-w-full max-h-full border border-gray-400 p-2 inline-block">
           {data.text[1]}
         </div>
       </div>
