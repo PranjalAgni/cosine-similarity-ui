@@ -95,7 +95,7 @@ export default function Home() {
           </button>
         </div>
         {isLoading ? (
-          <p>Hey its loading...</p>
+          <span className="loading loading-spinner loading-lg"></span>
         ) : (
           <TextSimilarity results={results} />
         )}
