@@ -94,7 +94,7 @@ export default function Home() {
             🚀🦜✨🪄
           </button>
         </div>
-        {!isLoading ? (
+        {isLoading ? (
           <span className="loading loading-spinner loading-lg mt-5 flex items-center"></span>
         ) : (
           <TextSimilarity results={results} />
